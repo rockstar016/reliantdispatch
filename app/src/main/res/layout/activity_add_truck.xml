@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rock.reliantdispatch.Main.Carrier.TruckSpace.AddTruckActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/default_margin">
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="@dimen/interval_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Truck Name *"
+                style="@style/editTextStyle" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            style="@style/spinnertitle"
+            android:text="Trailer Type *" />
+        <Spinner
+            android:id="@+id/spTrailerType"
+            style="@style/spinnerstyle"
+            android:entries="@array/trailerType"/>
+        <TextView
+            style="@style/spinnertitle"
+            android:text="Not Running Vehicles OK? *" />
+        <Spinner
+            android:id="@+id/spRunning"
+            style="@style/spinnerstyle"
+            android:entries="@array/running"/>
+        <TextView
+            style="@style/spinnertitle"
+            android:text="Dispatch Phone #" />
+        <TextView
+            style="@style/spinnerstyle"
+            android:text="(949) 422-0070"
+            android:textColor="@color/black_text_color"/>
+
+        <Button
+            style="@style/default_btn_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_background_green_color"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btCancel"
+            style="@style/default_btn_style"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_background_red_color"
+            android:text="Cancel Create Truck Profile" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

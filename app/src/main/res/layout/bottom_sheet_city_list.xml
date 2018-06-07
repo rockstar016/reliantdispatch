@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        style="@style/primaryTextStyle"
+        android:text="@string/select_region_or_state"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/default_margin"
+        android:paddingTop="@dimen/default_margin"
+        tools:context=".BottomSheetDialogs.CityListDialogFragment"
+        tools:listitem="@layout/item_city_list_dialog" />
+</LinearLayout>

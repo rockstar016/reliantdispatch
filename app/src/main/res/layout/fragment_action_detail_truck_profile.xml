@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_red_color"
+        android:text="Delete Truck Profile"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+    <Button
+        android:id="@+id/btEdit"
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_blue_color"
+        android:text="Edit Truck Profile"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+    <Button
+        android:id="@+id/btNewDeparture"
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_green_color"
+        android:text="Create New Departure"
+        android:layout_margin="@dimen/interval_margin" />
+</LinearLayout>

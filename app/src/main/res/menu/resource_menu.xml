@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/side_nav_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/carrierServices"
+            android:icon="@drawable/car_carrier"
+            android:title="@string/carrier_services"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/classifiedSearch"
+            android:icon="@drawable/classified_search"
+            android:title="@string/classified_search"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/weather"
+            android:icon="@drawable/weather"
+            android:title="@string/weather"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/resource_icon"
+            android:title="@string/map"
+            app:showAsAction="always|withText"/>
+    </group>
+</menu>

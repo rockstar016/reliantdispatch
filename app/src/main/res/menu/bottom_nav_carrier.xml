@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/side_nav_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/newSearch"
+            android:icon="@drawable/findloads_icon"
+            android:title="@string/new_search"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/saveRouteSearch"
+            android:icon="@drawable/saved_route_search"
+            android:title="@string/my_saved_route_search"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/dispatchOrdersToMe"
+            android:icon="@drawable/dispatch_orders_tome"
+            android:title="@string/dispatch_orders_to_me"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/myListedTruckSpace"
+            android:icon="@drawable/truck_space"
+            android:title="@string/my_listed_truck_space"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/findLoads_export"
+            android:icon="@drawable/export"
+            android:title="@string/export"
+            app:showAsAction="always|withText"/>
+    </group>
+</menu>

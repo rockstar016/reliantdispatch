@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company name :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WestWood Motors LLC"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RD Member # :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Docket MC # :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Name :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Michale"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3211 Commander Dr ste 101"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City, State, ZIP" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Phone # :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispatch Phone # :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fax # :" />
+            <TextView
+                style="@style/customInfoStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:layout_marginLeft="@dimen/default_margin"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

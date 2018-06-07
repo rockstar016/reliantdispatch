@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#021166</color>
+    <color name="colorPrimaryDark">#0b1b73</color>
+    <color name="colorAccent">#EA400D</color>
+    <color name="line_background">#7b7b7b</color>
+    <color name="newState">#2dcaca</color>
+    <color name="pickupState">#d6b824</color>
+    <color name="deliveredState">#34dc47</color>
+    <color name="card_yellow">#e6d582</color>
+    <color name="card_green">#179e14</color>
+    <color name="graph_background">#5577dc</color>
+    <color name="bar_color">#7391e9</color>
+    <color name="black_text_color">#333333</color>
+    <!--<color name="result_minor_text">#ffc0c0c0</color> &lt;!&ndash; source language text/label text color. For example, "OCR English" &ndash;&gt;-->
+    <color name="result_text">#ffffffff</color> <!-- OCR result text color -->
+    <color name="viewfinder_frame">#d6d6d6</color> <!-- viewfinder rectangle -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="check_bk_color">#086c09</color>
+    <color name="search_title_bk">#DDDDDD</color>
+</resources>

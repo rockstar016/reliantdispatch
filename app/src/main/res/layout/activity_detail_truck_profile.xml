@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarrierActivities.TruckSpace.DetailTruckProfileActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            style="@style/search_title_style"
+            android:text="Truck Profile"/>
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:padding="@dimen/interval_margin">
+            <TextView style="@style/itemTextTitleStyle"
+                android:text="Truck Name:"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+            <TextView style="@style/itemTextContentStyle"
+                android:text="Truck #3"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+            <TextView style="@style/itemTextTitleStyle"
+                android:text="Trailer Type:"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+            <TextView style="@style/itemTextContentStyle"
+                android:text="Open"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+            <TextView style="@style/itemTextTitleStyle"
+                android:text="Non-Running:"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+            <TextView style="@style/itemTextContentStyle"
+                android:text="Yes"
+                android:layout_marginTop="@dimen/tiny_margin"/>
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            style="@style/search_title_style"
+            android:text="Truck Space"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTruckSpace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:listitem="@layout/item_truck_departure" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

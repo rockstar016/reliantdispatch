@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Terminal" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/name" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Contact Name" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/buyer_number" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/address1" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="@string/address2" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="City, State, ZIP" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Metro Area"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Phone # 1" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Phone # 2" />
+
+        <TextView
+            style="@style/customInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:text="Cell phone" />
+    </LinearLayout>
+</FrameLayout>

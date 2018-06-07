@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rock.reliantdispatch.ShipperActivities.CarrierTrailer.CarrierTrailerDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Pick / Origin"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="State - City - ZipCode"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Metro Area: Philadelphia-Camden-Wilmington"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Pickup Map"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"
+                        android:layout_marginRight="@dimen/interval_margin"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Weather"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Delivery / Destination"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="State - City - ZipCode"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Metro Area: Philadelphia-Camden-Wilmington"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Delivery Map"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"
+                        android:layout_marginRight="@dimen/interval_margin"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Weather"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"/>
+                </LinearLayout>
+
+                <Button
+                    style="@style/default_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:background="@drawable/btn_background_yellow_color"
+                    android:text="Route Map"
+                    android:textColor="@color/black_text_color" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Vehicles"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Total: 3 Vehicles"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payments" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="$500 COD (Company Check)"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Ship"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    android:text="Ship Ready: 04/05/2018" />
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Available Carriers:0"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

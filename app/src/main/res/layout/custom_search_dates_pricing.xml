@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/search_title_style"
+        android:text="Dates &amp; Pricing" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="Ready to Ship Within"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <Spinner
+            android:id="@+id/datepriceSpShipWithIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/readyToShip"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="Payment Type"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <com.androidbuts.multispinnerfilter.MultiSpinner
+            android:id="@+id/paymentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/paymenttype"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/minPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minium Total Pay"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/maxPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minium Pay per Vehicle and Mile"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

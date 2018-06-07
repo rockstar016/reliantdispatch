@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        style="@style/search_title_style"
+        android:text="Vehicles" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Vehicle Type"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/interval_margin"/>
+        <com.androidbuts.multispinnerfilter.MultiSpinner
+            android:id="@+id/vehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:entries="@array/CarTypeList"
+            android:layout_margin="@dimen/interval_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Trailer Type"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/interval_margin"/>
+        <Spinner
+            android:id="@+id/vehicleSpTrailerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/trailerType"
+            android:layout_margin="@dimen/interval_margin"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Wide Load"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Running?"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <Spinner
+            android:id="@+id/vehicleSpRunning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/running"
+            style = "@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/interval_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Min of Vehicles"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black" />
+            <Spinner
+                android:id="@+id/vehicleSpMinVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/minVehicles"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/interval_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Max of Vehicles"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black" />
+            <Spinner
+                android:id="@+id/vehicleSpMaxVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/maxVehicles"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

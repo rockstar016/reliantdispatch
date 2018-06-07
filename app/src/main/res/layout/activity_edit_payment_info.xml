@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/paymentToCarrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/inputLayoutStyle">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Payment to Carrier *"
+                        style="@style/editTextStyle" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/onDeliveryToCarrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/inputLayoutStyle">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="On Delivery To Carrier *"
+                        style="@style/editTextStyle" />
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:id="@+id/spPayMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/paymethod"
+                    android:layout_margin="@dimen/interval_margin" />
+                <Spinner
+                    android:id="@+id/spOnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/onpay"
+                    android:layout_margin="@dimen/interval_margin" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    style="@style/default_btn_style"
+                    android:text="Check Transportation Price"
+                    android:background="@drawable/btn_background_green_color" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/interval_margin"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/check_bk_color"
+                        android:text="Shipper will Pay Carrier: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_marginLeft="@dimen/interval_margin"
+                        android:text="$ 30"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Auto Calculated)"
+                        android:layout_marginLeft="@dimen/interval_margin"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I agree to pay the carrier" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/interval_margin"
+                        android:text="$30" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:layout_marginEnd="@dimen/interval_margin"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <Spinner
+                        android:id="@+id/spInPay"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/spinnerstyle"
+                        android:entries="@array/inpay"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="upon"/>
+
+
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spUpOnPay"
+                    style="@style/spinnerstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/uponpay"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:layout_marginEnd="@dimen/interval_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment will be made with "
+                    android:layout_margin="@dimen/interval_margin"
+                    />
+                <Spinner
+                    android:id="@+id/spCheckType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:layout_marginEnd="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:entries="@array/checktype"
+                    style="@style/spinnerstyle"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rock.reliantdispatch.CarrierActivities.TruckSpace.AddDepartureActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="@dimen/default_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/search_title_style"
+                android:text="Departure Date &amp; Time" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/interval_margin"
+                android:layout_marginRight="@dimen/interval_margin">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Departure Date *"
+                        android:drawableRight="@drawable/calendar"
+                        style="@style/editTextStyle" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    style="@style/spinnertitle"
+                    android:text="Departure  *" />
+                <Spinner
+                    android:id="@+id/spDepartureTime"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/departureTime"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Opening Spaces *"
+                        style="@style/editTextStyle"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+        <TextView
+            style="@style/search_title_style"
+            android:text="Departing From" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/interval_margin"
+            android:layout_marginRight="@dimen/interval_margin">
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City or Area *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="State *" />
+            <Spinner
+                android:id="@+id/spStateFrom"
+                style="@style/spinnerstyle"
+                android:entries="@array/state_names"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zip Code"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/search_title_style"
+            android:text="Final Destination" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/interval_margin"
+            android:layout_marginRight="@dimen/interval_margin"
+            android:layout_marginBottom="@dimen/default_margin">
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="State or Region *" />
+
+            <Spinner
+                android:id="@+id/spStateDestination"
+                style="@style/spinnerstyle"
+                android:entries="@array/state_names"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Heading Direction *" />
+            <Spinner
+                android:id="@+id/spStateHeadingDirection"
+                style="@style/spinnerstyle"
+                android:entries="@array/state_names"/>
+            <Button
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Clear"
+                android:background="@drawable/btn_background_blue_color"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

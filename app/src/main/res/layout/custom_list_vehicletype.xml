@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/interval_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trailer Type:"
+            style="@style/itemTextTitleStyle"
+            android:layout_marginEnd="@dimen/interval_margin"/>
+        <Spinner
+            android:id="@+id/spTrailerType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/spinnerstyle"
+            android:entries="@array/trailerTypeInCreate"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginBottom="@dimen/interval_margin"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:layout_margin="@dimen/interval_margin"
+        android:text="Scan VIN Barcode / QR"
+        android:background="@drawable/btn_background_green_color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:text="Scan VIN Letters &amp; Numbers"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"
+        android:layout_marginBottom="@dimen/interval_margin"
+        android:background="@drawable/btn_background_blue_color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:text="Enter Vehicle Info Manually"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"
+        android:layout_marginBottom="@dimen/interval_margin"
+        android:background="@drawable/btn_background_red_color"/>
+</LinearLayout>

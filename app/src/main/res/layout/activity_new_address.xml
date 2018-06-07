@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accounts.MyAddressBook.NewAddressActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/interval_margin">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is Terminal"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a Private Residence"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Terminal, Dealer, Auction or Company Name (if any)"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Contact Name"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Buyer Number"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Address 1"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Address 2"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Zip Code"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="City"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="State"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <Spinner
+                android:id="@+id/spState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinnerstyle"
+                android:entries="@array/state_names"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Phone # 1"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Phone # 2"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Cell Phone"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"/>
+
+            <Button
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_red_color"
+                android:text="@string/clear"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

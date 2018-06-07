@@ -1,0 +1,168 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authority.Register.SecondRegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/default_layout_style">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/registerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a Free Membership Today!" />
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Membership Level *" />
+
+                <Spinner
+                    android:id="@+id/spMemberShip"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/membershipLevel"/>
+
+            <TextView
+                style="@style/registerSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Card Information"
+                android:layout_marginBottom="0dp"
+                android:textAlignment="viewStart"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FirstName *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/middleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Middle Name"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/billingAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Billing Address 1 *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/billingAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Billing Address 2"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/billingZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Billing Zip Code *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/billingCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Billing City *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Billing State *" />
+
+                <Spinner
+                    android:id="@+id/spState"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/state_names"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/creditCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Credit Card Number *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Expiration Month *" />
+
+            <Spinner
+                android:id="@+id/spExpirationMonth"
+                style="@style/spinnerstyle"
+                android:entries="@array/expirationmonth"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Expiration Year *" />
+
+            <Spinner
+                android:id="@+id/spExpirationYear"
+                style="@style/spinnerstyle"
+                android:entries="@array/expirationyear"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/securityNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginBottom="@dimen/default_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Security Number (CVC) *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/search_title_style"
+        android:text="Search Result Options" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/small_margin">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="New Listing Notification"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <Switch
+            android:id="@+id/searchSwitchNewListingNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Highlight New Listing"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/interval_margin"/>
+    <Spinner
+        android:id="@+id/searchSpHightLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/highLightNewListings"
+        style="@style/spinnerstyle"
+        android:layout_margin="@dimen/interval_margin"/>
+    <CheckBox
+        android:id="@+id/searchChkPlaceHight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Highlighted New Listing On Top"
+        android:layout_marginStart="@dimen/interval_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Show"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <Spinner
+            android:id="@+id/searchSpShowCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/showCountArray"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Posted by"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/interval_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/interval_margin">
+        <TextView
+            android:id="@+id/searchTxtCompanyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Companies"
+            android:layout_margin="@dimen/interval_margin"
+            style="@style/addInfoStyle"/>
+        <ImageButton
+            android:id="@+id/searchBtRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/delete_icon"
+            android:background="@android:color/transparent"
+            android:tint="@color/colorAccent"
+            android:layout_toLeftOf="@id/searchBtCompanySearch"
+            android:layout_margin="@dimen/interval_margin"/>
+        <ImageButton
+            android:id="@+id/searchBtCompanySearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/search_icon"
+            android:background="@android:color/transparent"
+            android:tint="@color/blue"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/interval_margin"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color"
+            android:layout_below="@id/searchBtCompanySearch"
+            android:layout_marginStart="@dimen/interval_margin"
+            android:layout_marginEnd="@dimen/interval_margin"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort by"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/interval_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <Spinner
+            android:id="@+id/searchSpSortBy"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/sortByArray"/>
+        <Spinner
+            android:id="@+id/searchSpSortByDirection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/sortDirection"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="then Sort by"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/interval_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <Spinner
+            android:id="@+id/searchSpThenSortBy"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/sortByArray"/>
+        <Spinner
+            android:id="@+id/searchSpThenSortByDirection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/sortDirection"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/interval_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Auto Refresh New Listing"
+            android:textColor="@android:color/black" />
+        <Spinner
+            android:id="@+id/searchSpRefreshNewListing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinnerstyle"
+            android:entries="@array/refreshListingTimeArray"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/interval_margin">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="New Listing Sound Notification"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black" />
+        <Switch
+            android:id="@+id/searchSwitchSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"/>
+    </LinearLayout>
+</LinearLayout>

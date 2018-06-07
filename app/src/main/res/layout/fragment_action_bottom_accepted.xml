@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/background_gray_color"
+        android:textColor="@color/black_text_color"
+        android:text="History"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+    <Button
+        android:id="@+id/btAddInspection"
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_yellow_color"
+        android:text="Inspection"
+        android:textColor="@color/black_text_color"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_red_color"
+        android:text="Cancel"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_blue_color"
+        android:text="Delivered"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_green_color"
+        android:text="Picked-Up"
+        android:layout_margin="@dimen/interval_margin" />
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rock.reliantdispatch">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".ShipperActivities.CreateListing.CreateQuickListingActivity" />
+        <activity android:name=".ShipperActivities.CreateListing.CreateSaveListingActivity" />
+        <activity android:name=".ShipperActivities.CreateListing.CreateDirectDispatchActivity" />
+        <activity android:name=".ShipperActivities.VehicleInfoActivity" />
+        <activity android:name=".ShipperActivities.PickupInfoActivity" />
+        <activity android:name=".ShipperActivities.DeliveryInfoActivity" />
+        <activity android:name=".ShipperActivities.Shipper_CustomerActivity" />
+        <activity
+            android:name=".ShipperActivities.CustomBarcodeScannerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Ocr.CaptureActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ShipperActivities.EditShippingDateInfoActivity" />
+        <activity android:name=".ShipperActivities.EditOrderIdActivity" />
+        <activity android:name=".ShipperActivities.EditPaymentInfoActivity" />
+        <activity android:name=".ShipperActivities.InstructionsActivity" />
+        <activity android:name=".ShipperActivities.SelectCarrierByNameActivity" />
+        <activity android:name=".Authority.Register.RegisterActivity" />
+        <activity
+            android:name=".Authority.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".Search.SearchActivity" /> -->
+        <activity android:name=".ShipperActivities.CarrierTrailer.CarrierTrailerDetailActivity" />
+        <activity android:name=".Main.Carrier.SavedRouteSearch.EditSearchActivity" />
+        <activity android:name=".Main.Carrier.TruckSpace.AddTruckActivity" />
+        <activity android:name=".CarrierActivities.TruckSpace.AddDepartureActivity" />
+        <activity
+            android:name=".ShipperActivities.EditQuickAddressActivity"
+            android:label="@string/title_activity_edit_quick_address"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Authority.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts.MyProfile.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Accounts.MyNotifications.MyNotificationActivity"
+            android:label="@string/title_activity_my_notification"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Accounts.MyAddressBook.AddressBookActivity"
+            android:label="@string/title_activity_address_book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts.MyAddressBook.NewAddressActivity"
+            android:label="@string/title_activity_new_address"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Accounts.ReliantSetting.ReliantSettingActivity"
+            android:label="@string/title_activity_reliant_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts.MyDocuments.MyDocumentActivity"
+            android:label="@string/title_activity_my_document"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts.MyDocuments.UploadDocumentActivity"
+            android:label="@string/title_activity_upload_document"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Accounts.MyDocuments.ViewDocumentSetActivity"
+            android:label="@string/title_activity_view_document_set"
+            android:parentActivityName=".Accounts.MyDocuments.MyDocumentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rock.reliantdispatch.Accounts.MyDocuments.MyDocumentActivity" />
+        </activity>
+        <activity
+            android:name=".ShipperActivities.VehicleListing.DetailVehicleListItemActivity"
+            android:label="@string/title_activity_detail_vehicle_list_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShipperActivities.DraftListing.DetailDraftItemActivity"
+            android:label="@string/title_activity_detail_draft_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarrierActivities.SavedRouteSearch.DetailSavedSearchActivity"
+            android:label="@string/title_activity_detail_saved_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarrierActivities.DispatchOrderToMe.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarrierActivities.TruckSpace.DetailTruckProfileActivity"
+            android:label="@string/title_activity_detail_truck_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarrierActivities.TruckSpace.TruckDepartureDetailActivity"
+            android:label="@string/title_activity_truck_departure_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

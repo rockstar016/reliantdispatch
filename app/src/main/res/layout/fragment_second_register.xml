@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authority.Register.SecondRegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/default_layout_style">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/registerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a Free Membership Today!" />
+            <TextView
+                style="@style/registerSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Information" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/zipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Zip Code *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                style="@style/spinnertitle"
+                android:text="State *" />
+            <Spinner
+                android:id="@+id/spState"
+                style="@style/spinnerstyle"
+                android:entries="@array/state_names"/>
+            <TextView
+                android:layout_marginTop="@dimen/default_margin"
+                style="@style/spinnertitle"
+                android:text="Business Hours *" />
+
+            <Button
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:text="Select Business Hours"
+                android:background="@drawable/btn_background_orange_color"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/default_margin"
+                style="@style/spinnertitle"
+                android:text="Time Zone *" />
+
+            <Spinner
+                android:id="@+id/spTimezone"
+                style="@style/spinnerstyle"
+                android:entries="@array/timezone"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/companyWebsiteURL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company Website URL"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

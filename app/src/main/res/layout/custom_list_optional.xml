@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/being_flexible_with_your_price_may_help_you_to_move_your_load_faster"
+        android:textColor="@color/black_text_color"
+        android:layout_margin="@dimen/interval_margin"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/interval_margin"
+        android:orientation="vertical">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow carriers to Make Offers when your listing is posted"
+            android:layout_marginBottom="@dimen/interval_margin"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay carriers from Making Offers on your listing"/>
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/spOptionalDelayDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinnerstyle"
+        android:entries="@array/delayDays"
+        android:layout_margin="@dimen/interval_margin"/>
+</LinearLayout>

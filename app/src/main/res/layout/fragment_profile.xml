@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Profile" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Notifications" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btAddressBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Address Book" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Reliant Settings" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Documents" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Feedback Profile" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btBilling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Billing" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+            <Button
+                android:id="@+id/btFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="My Favorites" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:background="@color/viewfinder_frame"/>
+
+            <Button
+                android:id="@+id/btLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/blackBorderlessButton"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:text="Log out" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,159 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rock.reliantdispatch.Main.Resource.ClassifiedSearch.ClassifiedSearchFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/search_title_style"
+            android:text="Location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/interval_margin"
+            android:text="Search Classified location Within"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Spinner
+                android:id="@+id/spMiles"
+                style="@style/spinnerstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:entries="@array/distance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="miles of"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/city"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+
+                <android.support.v7.widget.AppCompatEditText
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:hint="City" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spStateName"
+                style="@style/spinnerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/interval_margin"
+                android:entries="@array/state_names" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/zipCode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+
+                <android.support.v7.widget.AppCompatEditText
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:hint="Zip" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                style="@style/linkButton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="clear"
+                android:textColor="@color/colorAccent"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/interval_margin"/>
+        </LinearLayout>
+        <TextView style="@style/search_title_style"
+            android:text="Containing any of following words"
+            android:layout_marginTop="@dimen/default_margin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/anyText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatEditText
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/interval_margin" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                style="@style/default_btn_style"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_orange_color"
+                android:text="Search" />
+        </LinearLayout>
+        <TextView style="@style/search_title_style"
+            android:text="Type" />
+
+            <Spinner
+                android:layout_margin="@dimen/interval_margin"
+                android:id="@+id/spClassiedType"
+                style="@style/spinnerstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/classifiedType"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/maxPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/interval_margin">
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max Price"
+                style="@style/editTextStyle" />
+        </android.support.design.widget.TextInputLayout>
+
+            <Button style="@style/default_btn_style"
+                android:text="Post Classified"
+                android:layout_margin="@dimen/interval_margin"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_background_orange_color"
+                />
+            <Button style="@style/default_btn_style"
+                android:layout_margin="@dimen/interval_margin"
+                android:layout_width="match_parent"
+                android:text="Edit my Classifieds"
+                android:background="@drawable/btn_background_orange_color" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

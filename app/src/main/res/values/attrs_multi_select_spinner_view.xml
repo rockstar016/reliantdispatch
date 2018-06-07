@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="MultiSelectSpinnerView">
+        <attr name="placeholderTitle" format="string" />
+    </declare-styleable>
+
+</resources>

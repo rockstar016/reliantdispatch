@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/address_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address 1 *"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/address_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address 2"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/zipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip Code *"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City *"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        style="@style/spinnertitle"
+        android:text="State *"
+        android:layout_marginLeft="@dimen/default_margin" />
+
+    <Spinner
+        android:id="@+id/spState"
+        style="@style/spinnerstyle"
+        android:entries="@array/state_names"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/default_layout_style"
+        android:layout_marginTop="20dp"
+        android:text="Metro Area :"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/medium_font_size"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone # 1 *"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone # 2"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cellphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cell Phone"
+            style="@style/editTextStyle" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

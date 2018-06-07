@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/newSearch"
+        android:title=""
+        android:icon="@drawable/search_icon"
+        app:showAsAction="always"/>
+    <group>
+        <item
+            android:id="@+id/menu_offers"
+            android:title="Offers" />
+        <item
+            android:id="@+id/menu_dispatched"
+            android:title="Dispatched" />
+        <item
+            android:id="@+id/menu_accepted"
+            android:title="Accepted" />
+        <item
+            android:id="@+id/menu_in_transit"
+            android:title="In Transit" />
+        <item
+            android:id="@+id/menu_delivered"
+            android:title="Delivered" />
+        <item
+            android:id="@+id/menu_completed"
+            android:title="Completed" />
+        <item
+            android:id="@+id/menu_cancelled"
+            android:title="Canceled" />
+        <item
+            android:id="@+id/menu_archieved"
+            android:title="Archieved" />
+    </group>
+</menu>

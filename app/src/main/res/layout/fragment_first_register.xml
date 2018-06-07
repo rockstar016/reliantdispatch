@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authority.Register.FirstRegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/default_layout_style">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/registerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a Free Membership Today!" />
+            <TextView
+                style="@style/registerSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please describe your business" />
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Business Type *" />
+
+            <Spinner
+                android:id="@+id/spBusinessType"
+                style="@style/spinnerstyle"
+                android:entries="@array/businesstype" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/interval_margin">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company Legal Name *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/dbaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DBA Name(If Applicable)"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Display Name"
+                android:layout_marginTop="@dimen/interval_margin"/>
+
+            <Spinner
+                android:id="@+id/spDisplayName"
+                style="@style/spinnerstyle"
+                android:entries="@array/displayname" />
+            <TextView
+                style="@style/spinnertitle"
+                android:text="RD Member *"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/rdMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_layout_bk"
+                    android:textSize="@dimen/medium_font_size"
+                    android:text="733080"
+                    android:padding="5dp"
+                    android:textColor="@color/black_text_color"
+                    android:backgroundTint="@color/kprogresshud_grey_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:text="(Automatically Assigned)"
+                    android:textColor="@color/black_text_color"/>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UserName *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email *"
+                    style="@style/editTextStyle"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/interval_margin"
+                android:id="@+id/confirmEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Email *"
+                    style="@style/editTextStyle" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

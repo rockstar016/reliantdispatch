@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/add_pickup_infomation" />
+            <LinearLayout
+                android:id="@+id/layoutPickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_pickup_info"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btPickOrigin"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/add_pickup_infomation"
+                android:layout_margin="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/delivery_information" />
+            <LinearLayout
+                android:id="@+id/layoutDeliveryLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_pickup_info"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btDeliveryDestination"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/delivery_information"
+                android:layout_margin="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="Distance between Pickup and Delivery" />
+
+            <include layout="@layout/custom_list_distance"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/order_id" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/primaryTextStyle"
+                android:text="AB345-09831"/>
+            <Button
+                android:id="@+id/btOrderId"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/order_id"
+                android:layout_margin="@dimen/interval_margin" />
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/vehicles_amp_trailer_type"
+                />
+            <include layout="@layout/custom_list_vehicletype"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/shipping_date_information" />
+            <include layout="@layout/custom_list_shipping_information"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/payment_information" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentLayout"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/interval_margin"
+                android:layout_marginRight="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_payment_info"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btAddPaymentInformation"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/payment_information"
+                android:layout_margin="@dimen/interval_margin"/>
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/optional_allow_carriers_to_make_offers_on_your_listing"
+                android:maxLines="2" />
+            <include layout="@layout/custom_list_optional"/>
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/additional_listing_information"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextStyle"
+                android:layout_margin="@dimen/interval_margin"/>
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/dispatch_instructions"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="@string/special_instructions"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:textAlignment="gravity"
+                android:gravity="start|top"
+                style="@style/editTextStyle"
+                android:background="@drawable/vehicle_btn_background"
+                android:layout_margin="@dimen/interval_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Notes from Customer"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin"/>
+
+            <EditText
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/vehicle_btn_background"
+                android:gravity="start|top"
+                android:lines="5"
+                android:textAlignment="gravity" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginStart="@dimen/interval_margin"/>
+            <Button
+                android:id="@+id/btSaveListing"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Save Listing"
+                android:background="@drawable/btn_background_orange_color"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin" />
+
+            <Button
+                android:id="@+id/btPosting"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Post Listing"
+                android:background="@drawable/btn_background_green_color"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

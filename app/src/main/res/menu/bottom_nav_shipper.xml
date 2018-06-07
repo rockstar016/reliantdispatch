@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/side_nav_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_vehicle_list"
+            android:icon="@drawable/active_icon"
+            android:title="@string/vehicles"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/menu_drafts"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/drafts"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/menu_direct_dispatch"
+            android:icon="@drawable/archive_icon"
+            android:title="@string/direct_dispatch"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/menu_search_carrier"
+            android:icon="@drawable/carrier_trailer"
+            android:title="@string/search_carrier_trailer"
+            app:showAsAction="always|withText"/>
+        <item
+            android:id="@+id/menu_post_export"
+            android:icon="@drawable/export"
+            android:title="@string/export"
+            app:showAsAction="always|withText"/>
+    </group>
+</menu>

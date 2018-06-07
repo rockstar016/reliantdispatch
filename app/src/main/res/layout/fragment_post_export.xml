@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Pickup / Origin"
+                android:layout_marginTop="@dimen/interval_margin"/>
+
+            <com.androidbuts.multispinnerfilter.MultiSpinner
+                android:id="@+id/pickupCityGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinnerstyle"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Delivery / Destination"
+                android:layout_marginTop="@dimen/interval_margin"/>
+
+            <com.androidbuts.multispinnerfilter.MultiSpinner
+                style="@style/spinnerstyle"
+                android:id="@+id/deliveryCityGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Listings"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <Spinner
+                android:id="@+id/spListing"
+                style="@style/spinnerstyle"
+                android:entries="@array/listings"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Ready to Ship Within"
+                android:layout_marginTop="@dimen/interval_margin"/>
+
+            <Spinner
+                android:id="@+id/spReadyToShip"
+                style="@style/spinnerstyle"
+                android:entries="@array/readyToShip"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Sort By"
+                android:layout_marginTop="@dimen/interval_margin"/>
+
+            <Spinner
+                android:id="@+id/spSortBy"
+                style="@style/spinnerstyle"
+                android:entries="@array/sortBy"/>
+
+            <TextView
+                style="@style/spinnertitle"
+                android:text="Then Sort By"
+                android:layout_marginTop="@dimen/interval_margin"/>
+            <Spinner
+                android:id="@+id/spThenSortBy"
+                style="@style/spinnerstyle"
+                android:entries="@array/sortBy"/>
+
+
+            <Button
+                android:id="@+id/viewExportListing"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_green_color"
+                android:text="View Export Listing"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

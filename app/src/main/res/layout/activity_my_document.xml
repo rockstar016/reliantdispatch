@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accounts.MyDocuments.MyDocumentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="USDOT Document"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="This document is"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/interval_margin"/>
+                <Button
+                    android:id="@+id/btUsdotSetView"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    style="@style/linkButton"
+                    android:layout_weight="1"
+                    android:text=" Viewable to RD Members"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btUsdotView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btn_height"
+                style="@style/linkButton"
+                android:text="View USDOT Document"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/btUsdotUpload"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Upload Document"
+                android:background="@drawable/btn_background_green_color"
+                android:layout_margin = "@dimen/interval_margin"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="W-9 Document"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="This document is"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/interval_margin"/>
+                <Button
+                    android:id="@+id/btW9SetView"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    style="@style/linkButton"
+                    android:layout_weight="1"
+                    android:text="Private"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btW9View"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btn_height"
+                style="@style/linkButton"
+                android:text="View W-9 Document"
+                android:textColor="@color/colorAccent"/>
+            <Button
+                android:id="@+id/btW9Upload"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Upload Document"
+                android:background="@drawable/btn_background_green_color"
+                android:layout_margin ="@dimen/interval_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Certificate of Liability Insurance"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="This document is"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/interval_margin"/>
+                <Button
+                    android:id="@+id/btCLISetView"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    style="@style/linkButton"
+                    android:layout_weight="1"
+                    android:text=" Viewable to RD Members"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btCLIView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btn_height"
+                style="@style/linkButton"
+                android:text="View Certificate of Liability Insurance"
+                android:textColor="@color/colorAccent"/>
+            <Button
+                android:id="@+id/btCLIUpload"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:text="Upload Document"
+                android:background="@drawable/btn_background_green_color"
+                android:layout_margin ="@dimen/interval_margin"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

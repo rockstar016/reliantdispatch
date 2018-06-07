@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accounts.MyProfile.MyProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="User Information"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Username:"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:text="westwood"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Main Email:"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:text="westwoodautosale@aol.com"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Business Type:"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:text="Carrier"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+            </GridLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Company Information"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Company Legal Name:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="westwood Motors LLC"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="DBA Name(if Applicable):"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Display Name :"/>
+                <Spinner
+                    android:id="@+id/spDisplayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/displayname"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <TextView
+                        style="@style/itemTextTitleStyle"
+                        android:text="RD Member# :"/>
+                    <TextView
+                        style="@style/itemTextContentStyle"
+                        android:text="123456" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Address :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="3211 Commander Dr Ste 101"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Zip Code :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="75006"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="City :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Carrollton"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="State :"/>
+                <Spinner
+                    android:id="@+id/spState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/state_names"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Bussiness Hours: "/>
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Select Business Hours"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Timezone: "/>
+                <Spinner
+                    android:id="@+id/spTimezone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/timezone"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Company Web Site URL :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="www.test.com"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Owner/Manager Name :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Joe"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Company Main Phone Number :"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/editTextStyle"
+                        android:text="(555) 555-1212"/>
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        style="@style/editTextStyle"
+                        android:hint="Ext."/>
+                </LinearLayout>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="After Hours Phone Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Toll-free Phone Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Cell Phone Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Fax Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="(555) 666-1212"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="How did you here about us :"/>
+                <Spinner
+                    android:id="@+id/spHereAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/hereaboutus"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Company Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Dispatch Contacts Information"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Contact Method"/>
+                <Spinner
+                    android:id="@+id/spContactMethod"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/contactmethod"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Contact Name(s)"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Michael, John, Lora, Lorenzo, Robert, Jimmy, Nate, Jesus, George"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Phone Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="(555) 555-1212"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Notifications Email #1 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="reliantdispatch@gmail.com"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Notifications Email #2 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="westwoodautosale@aol.com"/>
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Notifications Email #3 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Dispatch Notifications Email #4 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Feedback Notifications Email # 1 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="westwoodautosale@aol.com"/>
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Feedback Notifications Email # 2 :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="reliantdispatch@gmail.com"/>
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_blue_color"
+                    android:text="Test-Send Email Notification"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Dispatch Contacts Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Cargo Insurance Information"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Cargo Insurance Company"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Test 08/15/2017"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Cargo Insurance Agent Name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="John Test 2"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Agent Zip Code :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="45101"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Agent City :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Aberdeen"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Agent State :"/>
+
+                <Spinner
+                    android:id="@+id/spAgentState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/spinnerstyle"
+                    android:entries="@array/state_names"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Agent Phone Number :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="(523) 456-7897"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Liability Insurance Limit :"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/itemTextContentStyle"
+                        android:text="$"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/editTextStyle"
+                        android:text="1,000,000.00"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Cargo Insurance Limit :"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/itemTextContentStyle"
+                        android:text="$"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/editTextStyle"
+                        android:text="1,000,000.00"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Cargo Insurance Deductible :"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/interval_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/itemTextContentStyle"
+                        android:text="$"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/editTextStyle"
+                        android:text="1,000.00"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Cargo Insurance Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Additional Information"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Year Established:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="2014"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Docket MC #:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="5525789"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="USDOT # :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="6528977"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Company Description :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:padding="@dimen/interval_margin"
+                    android:textSize="@dimen/small_font_size"
+                    android:background="@drawable/input_layout_bk"
+                    android:textAlignment="gravity"
+                    android:gravity="start|top"
+                    android:text="High end transporter"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Additional Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Equipment and Route Info"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Numbers of Trucks:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="10"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Equipment Description:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:padding="@dimen/interval_margin"
+                    android:textSize="@dimen/small_font_size"
+                    android:background="@drawable/input_layout_bk"
+                    android:textAlignment="gravity"
+                    android:gravity="start|top"
+                    android:text="Fleet of 10 Volvo trucks with 10 vehicles"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Route Description :"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:padding="@dimen/interval_margin"
+                    android:textSize="@dimen/small_font_size"
+                    android:background="@drawable/input_layout_bk"
+                    android:textAlignment="gravity"
+                    android:gravity="start|top"
+                    android:text="All 50 States"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Equipment and Route Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Company Reference Info"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Business Reference # 1:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Company 1"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Business Reference # 2:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Company 2"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Business Reference # 2:"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/editTextStyle"
+                    android:text="Company 2"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:text="Update Reference Info"
+                    android:background="@drawable/btn_background_orange_color"/>
+                
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="Carrier Information" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutCarrierInfo"
+                android:layout_margin="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_carrier_info"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btSearchCarrier"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_green_color"
+                android:text="Search and Select a Carrier by Name or RD Member #" />
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="Your company Information" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin">
+                <include layout="@layout/custom_list_company_info"/>
+            </FrameLayout>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/add_pickup_infomation" />
+            <LinearLayout
+                android:id="@+id/layoutPickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_pickup_info"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btPickOrigin"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/add_pickup_infomation"
+                android:layout_margin="@dimen/interval_margin"/>
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/delivery_information" />
+            <LinearLayout
+                android:id="@+id/layoutDeliveryLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/interval_margin"
+                android:visibility="gone">
+                <include layout="@layout/custom_list_pickup_info"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btDeliveryDestination"
+                android:layout_width="match_parent"
+                style="@style/default_btn_style"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/delivery_information"
+                android:layout_margin="@dimen/interval_margin"/>
+
+            <TextView
+
+                style="@style/search_title_style"
+                android:text="Distance between Pickup and Delivery" />
+            <include layout="@layout/custom_list_distance"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/order_id" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/primaryTextStyle"
+                android:text="AB345-09831"/>
+            <Button
+                android:id="@+id/btOrderId"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="Order ID" />
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/vehicles_amp_trailer_type"
+                />
+            <include layout="@layout/custom_list_vehicletype"/>
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/shipping_date_information" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin">
+                <include layout="@layout/custom_list_direct_shippingdate_info"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btShipDate"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/shipping_date_information" />
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/payment_information" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentLayout"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/interval_margin"
+                android:layout_marginRight="@dimen/interval_margin"
+                android:visibility="visible">
+
+                <include layout="@layout/custom_list_payment_info" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btPaymentInfo"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="@string/payment_information" />
+
+            <TextView
+                style="@style/search_title_style"
+                android:text="@string/dispatch_instructions" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="@string/special_instructions"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:textAlignment="gravity"
+                android:gravity="start|top"
+                style="@style/editTextStyle"
+                android:background="@drawable/vehicle_btn_background"
+                android:layout_margin="@dimen/interval_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Notes from Customer"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginEnd="@dimen/interval_margin"/>
+
+            <EditText
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/vehicle_btn_background"
+                android:gravity="start|top"
+                android:lines="5"
+                android:textAlignment="gravity" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginStart="@dimen/interval_margin"/>
+
+            <Button
+                android:id="@+id/btDispatch"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_marginEnd="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:background="@drawable/btn_background_green_color"
+                android:text="Direct Dispatch To a Carrier" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+

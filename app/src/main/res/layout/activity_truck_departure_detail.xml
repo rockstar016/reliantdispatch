@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarrierActivities.TruckSpace.TruckDepartureDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            style="@style/search_title_style"
+            android:text="Open Space"/>
+        <TextView
+            style="@style/itemTextContentStyle"
+            android:text="Open Space: 11"
+            android:layout_margin="@dimen/interval_margin"/>
+        <TextView
+            style="@style/search_title_style"
+            android:text="Departure Date / Time" />
+        <TextView
+            style="@style/itemTextContentStyle"
+            android:text="04/19/2018 Early (2 AM - 8 AM)"
+            android:layout_margin="@dimen/interval_margin"/>
+        <TextView
+            style="@style/search_title_style"
+            android:text="Departing From" />
+        <TextView
+            style="@style/itemTextContentStyle"
+            android:text="kjln - AL - poi"
+            android:layout_margin="@dimen/interval_margin"/>
+        <TextView
+            style="@style/search_title_style"
+            android:text="Final Destination" />
+        <TextView
+            style="@style/itemTextContentStyle"
+            android:text="Northeast - CT,DE,MA,ME,NH,NJ,NY,PA,RI,VT - oip"
+            android:maxLines="4"
+            android:layout_margin="@dimen/interval_margin"/>
+        <TextView
+            style="@style/search_title_style"
+            android:text="Heading" />
+        <TextView
+            style="@style/itemTextContentStyle"
+            android:text="North - N"
+            android:layout_margin="@dimen/interval_margin"/>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

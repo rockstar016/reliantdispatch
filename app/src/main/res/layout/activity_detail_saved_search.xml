@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarrierActivities.SavedRouteSearch.DetailSavedSearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/search_title_style"
+            android:text="Pick and Delivery"/>
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:paddingStart="@dimen/interval_margin"
+            android:paddingEnd="@dimen/interval_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Search Names:"
+                android:layout_marginTop="@dimen/interval_margin"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:text="Texas to California"
+                android:layout_marginTop="@dimen/interval_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Pickup:"
+                android:layout_marginTop="@dimen/interval_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:text="Within 25 miles of Irvine - CA - 92620 "
+                android:layout_marginTop="@dimen/interval_margin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginBottom="@dimen/interval_margin"
+                android:text="Delivery:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:text="Within 25 miles of Dallas - TX - 75201"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginBottom="@dimen/interval_margin" />
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/search_title_style"
+            android:text="Listed By"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/interval_margin"
+            android:paddingEnd="@dimen/interval_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="All Companies"
+                android:layout_marginTop="@dimen/interval_margin"
+                android:layout_marginBottom="@dimen/interval_margin"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/search_title_style"
+            android:text="Vehicles / Units Info"/>
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:padding="@dimen/interval_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Min. # of Vehicles: "
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/itemTextContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Max. # of Vehicles: "
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/itemTextContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Trailer Type: "
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/itemTextContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Wide Load: "
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/itemTextContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:text="Vehicle(s): "
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/interval_margin"/>
+
+            <TextView
+                style="@style/itemTextContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All" />
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/search_title_style"
+            android:text="Payment Info"/>
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tiny_margin"
+                app:columnCount="2"
+                android:padding="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Min. Total Pay: "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:text="$0.00" />
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Min. Per Mile: "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:text="$0.00" />
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Type: "
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:maxLines="10"
+                    android:text="Cash,Certified Check,Company Check, Personal Check, Paypal,Credit Card,Quick Pay,Comcheck" />
+
+            </android.support.v7.widget.GridLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/search_title_style"
+            android:text="Ready To Ship"/>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            android:paddingStart="@dimen/interval_margin"
+            android:paddingEnd="@dimen/interval_margin">
+
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Within:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:text="7 Days"
+                android:layout_marginBottom="@dimen/tiny_margin"/>
+        </android.support.v7.widget.GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Display Search Result"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Highlight:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="7 Days"
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Result per Page:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="7 Days"
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Sort by:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Pickup / Origin Ascending "
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="then Sort by:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Delivery / Destination Ascending"
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:text="Auto Refresh:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="in 15 seconds"
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

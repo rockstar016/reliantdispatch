@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/default_layout_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/default_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dispatch Date :"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/interval_margin"/>
+            <TextView
+                android:id="@+id/txtDispatchDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/4/2018"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:textColor="@color/black_text_color"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Available Pickup Date"
+            style="@style/search_title_style"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/firstAvailableDate"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/calendar"
+            android:layout_margin="@dimen/interval_margin"
+            android:textSize="@dimen/small_text"
+            android:inputType="none"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup"
+            style="@style/search_title_style"
+            android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/pickupSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/dateset"
+                android:layout_margin="@dimen/interval_margin"
+                style="@style/spinnerstyle"/>
+            <EditText
+                android:id="@+id/pickupDate"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:drawableEnd="@drawable/calendar"
+                android:textSize="@dimen/small_text"
+                android:inputType="none"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                style="@style/search_title_style" />
+            <Spinner
+                android:id="@+id/deliverSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/dateset"
+                style="@style/spinnerstyle"
+                android:layout_margin="@dimen/interval_margin" />
+            <EditText
+                android:id="@+id/deliverDate"
+                android:focusable="false"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:drawableEnd="@drawable/calendar"
+                android:textSize="@dimen/small_text"
+                android:inputType="none"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
