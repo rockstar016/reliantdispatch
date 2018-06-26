@@ -1,7 +1,6 @@
 package com.rock.reliantdispatch.Main.Shipper.VehicleList;
+
 import android.app.Activity;
-import android.content.Context;
-import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -10,14 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.rock.model.Shipper.VehicleListingModel;
 import com.rock.reliantdispatch.Base.BaseRecyclerViewHolder;
 import com.rock.reliantdispatch.Constants.VehiclesConfig;
 import com.rock.reliantdispatch.Interface.BaseRecyclerInterface;
-import com.rock.reliantdispatch.Model.Shipper.VehicleListingModel;
 import com.rock.reliantdispatch.R;
 
 import java.util.ArrayList;
-import java.util.logging.Handler;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

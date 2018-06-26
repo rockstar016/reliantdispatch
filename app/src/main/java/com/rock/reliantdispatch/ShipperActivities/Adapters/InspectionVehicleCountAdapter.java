@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.rock.reliantdispatch.Model.Common.VehicleModel;
+import com.rock.model.Common.VehicleModel;
 import com.rock.reliantdispatch.R;
 
 import java.util.ArrayList;

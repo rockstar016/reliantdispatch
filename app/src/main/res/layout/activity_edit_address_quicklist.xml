@@ -9,37 +9,42 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <include layout="@layout/toolbar"/>
     </android.support.design.widget.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:paddingTop="@dimen/default_btn_height">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtZip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/interval_margin">
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
                 android:hint="@string/zip_code"
                 style="@style/editTextStyle"/>
         </android.support.design.widget.TextInputLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtCity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_margin="@dimen/interval_margin"
                 android:layout_gravity="bottom">
-                <EditText
+                <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/city"
+                    android:inputType="textPostalAddress"
                     style="@style/editTextStyle"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -53,5 +58,18 @@
                 android:layout_marginEnd="@dimen/interval_margin"
                 android:entries="@array/state_names" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/itemTextTitleStyle"
+            android:text="Metro Area"
+            android:layout_marginStart="@dimen/interval_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/itemTextContentStyle"
+            android:layout_marginStart="@dimen/interval_margin"
+            android:layout_marginBottom="@dimen/interval_margin"/>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

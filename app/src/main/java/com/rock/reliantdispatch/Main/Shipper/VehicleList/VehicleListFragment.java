@@ -1,14 +1,9 @@
 package com.rock.reliantdispatch.Main.Shipper.VehicleList;
 
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.Nullable;
 import android.support.annotation.UiThread;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -25,13 +20,10 @@ import android.widget.Toast;
 import com.rock.reliantdispatch.Base.BaseFragment;
 import com.rock.reliantdispatch.Constants.VehiclesConfig;
 import com.rock.reliantdispatch.Interface.BaseRecyclerInterface;
-import com.rock.reliantdispatch.Model.Shipper.VehicleListingModel;
-import com.rock.reliantdispatch.ShipperActivities.CreateListing.CreateQuickListingActivity;
 import com.rock.reliantdispatch.R;
+import com.rock.reliantdispatch.ShipperActivities.CreateListing.CreateQuickListingActivity;
 import com.rock.reliantdispatch.ShipperActivities.VehicleListing.DetailVehicleListItemActivity;
 import com.rock.reliantdispatch.ViewModels.VehicleListViewModel;
-
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

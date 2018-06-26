@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 
-import com.kaopiz.kprogresshud.KProgressHUD;
-
 /**
  * Created by Rock on 2016.11.09.
  */

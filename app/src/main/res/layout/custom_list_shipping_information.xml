@@ -16,6 +16,8 @@
         android:layout_height="wrap_content"
         android:text="Today" />
     <EditText
+        android:focusable="false"
+        android:inputType="none"
         android:id="@+id/txtShippingDateInformation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".CommonActivity.InspectionCaptureActivity">
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cameraFacing="back"
+        app:cameraJpegQuality="70"
+        app:cameraGesturePinch="zoom"
+        app:cameraPictureSizeMaxWidth="2500"
+        app:cameraPictureSizeMaxHeight="2000" />
+    <ImageView
+        android:id="@+id/imgPhotoType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        android:contentDescription="@string/title_activity_inspection_capture" />
+    <Button
+        android:id="@+id/btShutter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shutter_button"
+        android:layout_gravity="center_vertical|end"
+        android:layout_margin="@dimen/interval_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewfinder_mask"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:padding="@dimen/interval_margin">
+
+        <ImageButton
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/itemTextTitleStyle"
+            android:text="title"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/interval_margin"/>
+    </LinearLayout>
+
+</FrameLayout>

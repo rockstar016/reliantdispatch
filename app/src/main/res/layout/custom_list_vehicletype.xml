@@ -29,9 +29,12 @@
         android:layout_marginStart="@dimen/interval_margin"
         android:layout_marginBottom="@dimen/interval_margin"/>
     <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/interval_margin"
+        android:id="@+id/vehicleRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/btScanVinCode"
         android:layout_width="match_parent"
         style="@style/default_btn_style"
         android:layout_margin="@dimen/interval_margin"
@@ -39,6 +42,7 @@
         android:background="@drawable/btn_background_green_color"/>
 
     <Button
+        android:id="@+id/btScanVinLetter"
         android:layout_width="match_parent"
         style="@style/default_btn_style"
         android:text="Scan VIN Letters &amp; Numbers"
@@ -48,6 +52,7 @@
         android:background="@drawable/btn_background_blue_color"/>
 
     <Button
+        android:id="@+id/btVehicleManual"
         android:layout_width="match_parent"
         style="@style/default_btn_style"
         android:text="Enter Vehicle Info Manually"

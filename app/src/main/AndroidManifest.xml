@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -20,11 +21,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/geo_api_key" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.rock.reliantdispatch.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
         <activity android:name=".Main.MainActivity" />
         <activity android:name=".ShipperActivities.CreateListing.CreateQuickListingActivity" />
         <activity android:name=".ShipperActivities.CreateListing.CreateSaveListingActivity" />
         <activity android:name=".ShipperActivities.CreateListing.CreateDirectDispatchActivity" />
-        <activity android:name=".ShipperActivities.VehicleInfoActivity" />
+        <activity
+            android:name=".ShipperActivities.VehicleInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".ShipperActivities.PickupInfoActivity" />
         <activity android:name=".ShipperActivities.DeliveryInfoActivity" />
         <activity android:name=".ShipperActivities.Shipper_CustomerActivity" />
@@ -125,6 +142,22 @@
         <activity
             android:name=".CarrierActivities.TruckSpace.TruckDepartureDetailActivity"
             android:label="@string/title_activity_truck_departure_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommonActivity.InspectionActivity"
+            android:label="@string/title_activity_inspection"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommonActivity.InspectionCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_inspection_capture"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".CommonActivity.Damage.AddDamageActivity"
+            android:label="@string/title_activity_add_damage"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -3,10 +3,10 @@ package com.rock.reliantdispatch.ViewModels;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
+import com.rock.model.Shipper.VehicleListingModel;
 import com.rock.reliantdispatch.Constants.VehiclesConfig;
 import com.rock.reliantdispatch.DataStoreLayer.DataStoreManager;
 import com.rock.reliantdispatch.DataStoreLayer.ShipperVehicleListingStoreLayer;
-import com.rock.reliantdispatch.Model.Shipper.VehicleListingModel;
 
 import java.util.ArrayList;
 public class VehicleListViewModel extends ViewModel {

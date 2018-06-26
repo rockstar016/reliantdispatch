@@ -33,7 +33,7 @@ public class CarrierTrailerDetailActivity extends BaseActivity implements BaseRe
         setContentView(R.layout.activity_vehicle_detail);
         ButterKnife.bind(this);
         InitToolbar(toolbar, R.string.title_activity_detail_carriertrailer_item);
-        adapter = new DetailVehicleRecyclerAdapter(this, this);
+//        adapter = new DetailVehicleRecyclerAdapter(this, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);

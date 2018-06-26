@@ -1,7 +1,6 @@
 package com.rock.reliantdispatch.DataStoreLayer;
 
-import com.rock.reliantdispatch.Model.Shipper.VehicleListingModel;
-import com.rock.reliantdispatch.ViewModels.VehicleListViewModel;
+import com.rock.model.Shipper.VehicleListingModel;
 
 import java.util.ArrayList;
 

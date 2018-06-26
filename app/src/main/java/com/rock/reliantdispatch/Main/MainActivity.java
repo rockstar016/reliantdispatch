@@ -12,14 +12,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.rock.reliantdispatch.Main.Shipper.ShipperFragment;
-import com.rock.reliantdispatch.Main.Shipper.VehicleList.VehicleListFragment;
 import com.rock.reliantdispatch.Base.BaseActivity;
 import com.rock.reliantdispatch.Base.BaseFragment;
 import com.rock.reliantdispatch.Main.Billlading.BillLadingFragment;
-import com.rock.reliantdispatch.Main.Resource.ResourceFragment;
 import com.rock.reliantdispatch.Main.Carrier.SearchFragment;
 import com.rock.reliantdispatch.Main.Profile.ProfileFragment;
+import com.rock.reliantdispatch.Main.Resource.ResourceFragment;
+import com.rock.reliantdispatch.Main.Shipper.ShipperFragment;
+import com.rock.reliantdispatch.Main.Shipper.VehicleList.VehicleListFragment;
 import com.rock.reliantdispatch.R;
 
 import butterknife.BindView;
@@ -63,15 +63,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
     }
 
-    public void SetToolbarTitle(String title)
-    {
-        getSupportActionBar().setTitle(title);
-    }
 
-    public void SetToolbarTitle(int stringResource)
-    {
-        getSupportActionBar().setTitle(stringResource);
-    }
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         MoveToSelectedFragment(item);

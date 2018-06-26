@@ -7,47 +7,50 @@
     android:paddingTop="@dimen/interval_margin"
     android:paddingBottom="@dimen/interval_margin">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="3dp">
-
-            <TextView
-                android:id="@+id/year"
-                style="@style/vehicleTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="year" />
-
-            <TextView
-                android:id="@+id/make"
-                style="@style/vehicleTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="make" />
-
-            <TextView
-                android:id="@+id/model"
-                style="@style/vehicleTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="model" />
-        </LinearLayout>
+        android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/year"
+            style="@style/vehicleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="year" />
+
+        <TextView
+            android:id="@+id/make"
+            style="@style/vehicleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/year"
+            android:text="make" />
+
+        <TextView
+            android:id="@+id/model"
+            style="@style/vehicleTextStyle"
+            android:layout_toEndOf="@+id/make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="model" />
+        <ImageButton
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_close_black_24dp"
+            android:contentDescription="@string/close_button"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
             android:id="@+id/damageCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:padding="3dp"
             android:text="No damages" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,19 +78,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
             android:text="VIN#:"
-            android:textSize="@dimen/medium_font_size" />
+            style="@style/itemTextTitleStyle"/>
 
         <TextView
             android:id="@+id/vinTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
             android:text=""
-            android:textSize="@dimen/medium_font_size" />
+            style="@style/itemTextContentStyle"/>
     </LinearLayout>
 
     <LinearLayout
@@ -96,19 +93,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
             android:text="Lot#:"
-            android:textSize="@dimen/medium_font_size" />
+            style="@style/itemTextTitleStyle" />
 
         <TextView
             android:id="@+id/lotTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text=""
-            android:textSize="@dimen/medium_font_size" />
+            style="@style/itemTextContentStyle"
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -146,4 +137,5 @@
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/default_margin"
         android:background="@color/line_background" />
+
 </LinearLayout>

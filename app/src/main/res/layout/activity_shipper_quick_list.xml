@@ -31,12 +31,25 @@
                 android:text="@string/pickup_location"/>
 
             <TextView
+                android:id="@+id/txtQuickPickup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/itemTextContentStyle"
-                android:layout_margin="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
                 android:text="State - City - ZipCode"/>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
+                android:layout_margin="@dimen/interval_margin"
+                android:text="Metro Area"/>
+            <TextView
+                android:id="@+id/txtQuickPickupMetro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:text="State - City - ZipCode"/>
             <Button
                 android:id="@+id/btPickUpLocation"
                 style="@style/default_btn_style"
@@ -53,9 +66,24 @@
                 android:text="@string/delivery_location"/>
 
             <TextView
+                android:id="@+id/txtQuickDelivery"
                 android:layout_width="match_parent"
                 style="@style/itemTextContentStyle"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:text="State - City - ZipCode"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextTitleStyle"
                 android:layout_margin="@dimen/interval_margin"
+                android:text="Metro Area"/>
+            <TextView
+                android:id="@+id/txtQuickDeliveryMetro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:layout_marginStart="@dimen/interval_margin"
                 android:text="State - City - ZipCode"/>
 
             <Button
@@ -74,11 +102,16 @@
             <TextView
                 style="@style/search_title_style"
                 android:text="@string/order_id" />
+
             <TextView
+                android:id="@+id/txtOrderId"
+                style="@style/itemTextTitleStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/primaryTextStyle"
-                android:text="AB345-09831"/>
+                android:layout_marginEnd="@dimen/interval_margin"
+                android:layout_marginLeft="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:layout_marginTop="@dimen/interval_margin" />
             <Button
                 android:id="@+id/btOrderId"
                 style="@style/default_btn_style"
@@ -88,14 +121,17 @@
                 android:text="Order ID" />
             <TextView
                 style="@style/search_title_style"
-                android:text="@string/vehicles_amp_trailer_type"
-                />
+                android:text="@string/vehicles_amp_trailer_type" />
+
             <include layout="@layout/custom_list_vehicletype"/>
 
             <TextView
                 style="@style/search_title_style"
                 android:text="@string/shipping_date_information" />
-            <include layout="@layout/custom_list_shipping_information"/>
+            <com.rock.reliantdispatch.CustomView.ShipDateView
+                android:id="@+id/shipDateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <TextView
                 style="@style/search_title_style"

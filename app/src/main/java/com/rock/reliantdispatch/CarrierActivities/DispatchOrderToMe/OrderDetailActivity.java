@@ -3,7 +3,6 @@ package com.rock.reliantdispatch.CarrierActivities.DispatchOrderToMe;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.UiThread;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -18,7 +17,6 @@ import com.rock.reliantdispatch.CarrierActivities.Adapters.VehicleRecyclerAdapte
 import com.rock.reliantdispatch.Constants.OrderConfig;
 import com.rock.reliantdispatch.Interface.BaseRecyclerInterface;
 import com.rock.reliantdispatch.R;
-import com.rock.reliantdispatch.ShipperActivities.VehicleListing.ActionBottomDispatchedItemFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,7 +43,6 @@ public class OrderDetailActivity extends BaseActivity implements BaseRecyclerInt
         InitToolbar(toolbar, R.string.title_activity_order_detail);
         OrderKind = getIntent().getIntExtra(BUNDLE_ORDER_KIND, OrderConfig.ORDER_TYPE_DISPATCHED);
 
-        recyclerVehicle.setHasFixedSize(true);
         mVehicleAdapter = new VehicleRecyclerAdapter(this, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerVehicle.setLayoutManager(layoutManager);

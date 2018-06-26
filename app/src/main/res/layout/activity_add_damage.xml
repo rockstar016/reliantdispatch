@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/damageParentLayout"
+    tools:context=".CommonActivity.Damage.AddDamageActivity">
+   <com.otaliastudios.zoom.ZoomLayout
+       android:id="@+id/zoomLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical|horizontal"
+       app:overScrollHorizontal="true"
+       app:overScrollVertical="true"
+       app:overPinchable="true"
+       app:horizontalPanEnabled="true"
+       app:verticalPanEnabled="true"
+       app:zoomEnabled="true"
+       app:minZoom="0.7"
+       app:minZoomType="zoom"
+       app:maxZoom="3.0"
+       app:maxZoomType="zoom"
+       app:hasClickableChildren="true">
+       <FrameLayout
+           android:id="@+id/zoomLayoutContainer"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="left|top"
+           android:background="@color/black_text_color">
+            <com.rock.reliantdispatch.CustomView.MZoomImageView
+                android:id="@+id/preview_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/car" />
+       </FrameLayout>
+   </com.otaliastudios.zoom.ZoomLayout>
+    <FrameLayout
+        android:id="@+id/toolbarArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewfinder_mask"
+        android:padding="@dimen/interval_margin"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/btDone"
+            android:layout_width="wrap_content"
+            style="@style/default_btn_style"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/btn_background_blue_color"
+            android:text="Done" />
+        <Button
+            android:id="@+id/btClearAll"
+            android:layout_width="wrap_content"
+            style="@style/default_btn_style"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/btn_background_red_color"
+            android:text="Clear All"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewfinder_mask"
+        android:layout_gravity="bottom"
+        android:text="Tap on damaged locations and choose damage code"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/interval_margin"/>
+</FrameLayout>

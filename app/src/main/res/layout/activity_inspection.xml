@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CommonActivity.InspectionActivity"
+    android:keepScreenOn="true">
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical|horizontal"
+        app:overScrollHorizontal="true"
+        app:overScrollVertical="true"
+        app:overPinchable="true"
+        app:horizontalPanEnabled="true"
+        app:verticalPanEnabled="true"
+        app:zoomEnabled="true"
+        app:minZoom="0.7"
+        app:minZoomType="zoom"
+        app:maxZoom="3.0"
+        app:maxZoomType="zoom"
+        app:hasClickableChildren="true">
+        <FrameLayout
+            android:id="@+id/zoomLayoutContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:background="@color/black_text_color">
+            <com.rock.reliantdispatch.CustomView.MZoomImageView
+                android:id="@+id/preview_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/car" />
+        </FrameLayout>
+    </com.otaliastudios.zoom.ZoomLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewfinder_mask"
+        android:layout_alignParentBottom="true">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbarArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/viewfinder_mask"
+        android:padding="@dimen/interval_margin"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/btClose"
+            android:layout_width="110dp"
+            style="@style/default_btn_style"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/btn_background_blue_color"
+            android:text="@string/close_button" />
+        <Button
+            android:id="@+id/btAddPhoto"
+            android:layout_width="110dp"
+            style="@style/default_btn_style"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/btn_background_blue_color"
+            android:text="Add Photo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="main text"
+                style="@style/itemTextTitleStyle"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/txtSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/itemTextContentStyle"
+                android:text="secondary text"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btAddDamage"
+        android:layout_width="110dp"
+        style="@style/default_btn_style"
+        android:layout_below="@id/toolbarArea"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin"
+        android:text="Add Damage"
+        android:background="@drawable/btn_background_red_color" />
+
+    <Button
+        android:id="@+id/btRetake"
+        android:layout_width="110dp"
+        style="@style/default_btn_style"
+        android:background="@drawable/btn_background_blue_color"
+        android:text="Retake Photo"
+        android:layout_below="@id/btAddDamage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/interval_margin"
+        android:layout_marginEnd="@dimen/interval_margin" />
+
+</RelativeLayout>

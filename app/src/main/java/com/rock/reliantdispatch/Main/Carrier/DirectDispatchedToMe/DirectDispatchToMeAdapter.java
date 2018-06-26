@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.rock.model.Carrier.OrderListing;
 import com.rock.reliantdispatch.Base.BaseRecyclerViewHolder;
 import com.rock.reliantdispatch.Constants.OrderConfig;
 import com.rock.reliantdispatch.Interface.BaseRecyclerInterface;
-import com.rock.reliantdispatch.Model.Carrier.OrderListing;
 import com.rock.reliantdispatch.R;
 
 import butterknife.BindView;

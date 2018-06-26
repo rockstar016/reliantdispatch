@@ -54,7 +54,7 @@ public class FragmentDetailVehicleDraftItem extends Fragment implements BaseRecy
         unbinder = ButterKnife.bind(this, rootView);
         btViewGatePass.setVisibility(View.INVISIBLE);
         btCarrierInfo.setText("(Carrier Not Assigned)");
-        mVehicleAdapter = new DetailVehicleRecyclerAdapter(parentActivity, this);
+//        mVehicleAdapter = new DetailVehicleRecyclerAdapter(parentActivity, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.parentActivity);
         recyclerVehicle.setLayoutManager(layoutManager);
         recyclerVehicle.setAdapter(mVehicleAdapter);

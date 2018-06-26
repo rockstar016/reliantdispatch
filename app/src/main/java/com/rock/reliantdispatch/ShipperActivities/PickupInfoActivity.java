@@ -6,8 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Spinner;
 
+import com.rock.model.Common.PickupDeliveryModel;
 import com.rock.reliantdispatch.Base.BaseActivity;
-import com.rock.reliantdispatch.Model.Common.PickupDeliveryModel;
 import com.rock.reliantdispatch.R;
 import com.rock.reliantdispatch.Utils.SpinnerInitUtils;
 

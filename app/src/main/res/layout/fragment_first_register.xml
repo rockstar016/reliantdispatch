@@ -76,12 +76,10 @@
                     android:id="@+id/rdMember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/input_layout_bk"
                     android:textSize="@dimen/medium_font_size"
                     android:text="733080"
                     android:padding="5dp"
-                    android:textColor="@color/black_text_color"
-                    android:backgroundTint="@color/kprogresshud_grey_color"/>
+                    android:textColor="@color/black_text_color" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

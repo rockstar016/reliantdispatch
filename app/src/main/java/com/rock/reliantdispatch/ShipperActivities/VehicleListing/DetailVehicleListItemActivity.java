@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
-import android.support.annotation.RestrictTo;
 import android.support.annotation.UiThread;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -22,7 +21,6 @@ import butterknife.ButterKnife;
 public class DetailVehicleListItemActivity extends BaseActivity {
 
     @BindView(R.id.toolbar) Toolbar toolbar;
-    FragmentDetailVehicleItem fragVehicleDetail;
     @BindView(R.id.scrollContainer)
     ScrollView scrollContainer;
 
@@ -34,7 +32,6 @@ public class DetailVehicleListItemActivity extends BaseActivity {
         setContentView(R.layout.activity_detail_vehicle_list);
         ButterKnife.bind(this);
         InitToolbar(toolbar, R.string.title_activity_detail_vehicle_list_item);
-        fragVehicleDetail = (FragmentDetailVehicleItem) getSupportFragmentManager().findFragmentById(R.id.fragVehicleDetail);
         VehicleListItemType = getIntent().getIntExtra(VEHICLE_ITEM_TYPE, VehiclesConfig.VEHICLE_LISTING_TYPE_LISTED);
     }
 

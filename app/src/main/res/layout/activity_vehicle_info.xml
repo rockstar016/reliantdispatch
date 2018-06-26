@@ -26,11 +26,13 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="VIN"
-                    android:inputType="textNoSuggestions"
+                    android:text="KMHWF35H84A921550"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
                     style="@style/editTextStyle"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -40,7 +42,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -53,7 +55,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
@@ -66,7 +68,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Model *"
@@ -79,7 +81,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Trim"
@@ -104,19 +106,12 @@
                     android:text="Type" />
 
                 <Spinner
-                    android:id="@+id/typeSpinner"
+                    android:id="@+id/spVehicleType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:entries="@array/CarTypeList"
-                    android:paddingLeft="10dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginRight="7dp"
-                    android:background="@color/line_background" />
-
+                    android:paddingLeft="10dp"
+                    style="@style/spinnerstyle"/>
             </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -125,7 +120,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Drive Type"
@@ -141,11 +136,11 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Length"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     style="@style/editTextStyle" />
             </android.support.design.widget.TextInputLayout>
 
@@ -155,11 +150,11 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Width"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     style="@style/editTextStyle" />
             </android.support.design.widget.TextInputLayout>
 
@@ -169,11 +164,11 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Height"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     style="@style/editTextStyle" />
             </android.support.design.widget.TextInputLayout>
 
@@ -183,40 +178,36 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Curb Weight"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     style="@style/editTextStyle" />
             </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="@dimen/default_margin"
-                android:layout_marginRight="@dimen/default_margin">
+                android:orientation="vertical">
+
                 <TextView
+                    style="@style/itemTextContentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Running"/>
+                    android:text="Running" />
+
                 <Spinner
                     android:id="@+id/typeRunning"
-                    android:paddingLeft="10dp"
+                    style="@style/spinnerstyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/interval_margin"
+                    android:layout_marginStart="@dimen/interval_margin"
                     android:entries="@array/yesno"
-                    />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginRight="7dp"
-                    android:background="@color/line_background"/>
+                    android:paddingLeft="10dp" />
 
             </LinearLayout>
 
@@ -226,13 +217,12 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
+                    style="@style/editTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Qty"
-                    android:text="1"
-                    android:inputType="number"
-                    style="@style/editTextStyle" />
+                    android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -241,12 +231,12 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
+                    style="@style/editTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Color"
-                    android:inputType="textPersonName"
-                    style="@style/editTextStyle" />
+                    android:inputType="text" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -255,7 +245,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="License Plate"
@@ -269,7 +259,7 @@
                 android:layout_height="wrap_content"
                 style="@style/inputLayoutStyle">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Auction Lot"
@@ -280,44 +270,60 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="@dimen/default_margin"
-                android:layout_marginRight="@dimen/default_margin">
+                android:layout_marginEnd="@dimen/interval_margin"
+                android:layout_marginStart="@dimen/interval_margin"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="State"/>
+                    android:text="State" />
+
                 <Spinner
                     android:id="@+id/stateSpinner"
-                    android:paddingLeft="10dp"
+                    style="@style/spinnerstyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:entries="@array/state_names"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginRight="7dp"
-                    android:background="@color/line_background"/>
+                    android:entries="@array/state_names"
+                    android:paddingLeft="10dp" />
 
             </LinearLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/additionInfo"
+                style="@style/inputLayoutStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/inputLayoutStyle">
+                android:layout_height="wrap_content">
 
-                <android.support.v7.widget.AppCompatEditText
+                <android.support.design.widget.TextInputEditText
+                    style="@style/editTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
                     android:hint="Additional Information"
-                    style="@style/editTextStyle" />
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="10" />
             </android.support.design.widget.TextInputLayout>
+            <TextView
+                style="@style/itemTextTitleStyle"
+                android:text="Vehicle Photo"
+                android:layout_marginStart="@dimen/interval_margin"/>
+
+            <ImageView
+                android:id="@+id/imgCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/interval_margin"
+                android:minHeight="120dp" />
+
+            <Button
+                android:id="@+id/btPhotoChange"
+                style="@style/default_btn_style"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/interval_margin"
+                android:background="@drawable/btn_background_blue_color"
+                android:text="Change/Remove Photo" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

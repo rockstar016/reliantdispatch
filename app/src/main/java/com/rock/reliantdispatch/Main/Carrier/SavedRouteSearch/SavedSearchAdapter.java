@@ -6,21 +6,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
-import com.chauthai.swipereveallayout.ViewBinderHelper;
 import com.rock.reliantdispatch.Base.BaseRecyclerViewHolder;
 import com.rock.reliantdispatch.Interface.BaseRecyclerInterface;
-import com.rock.reliantdispatch.Interface.DirectDispatchInterface;
 import com.rock.reliantdispatch.R;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
- * Created by michalejackson on 4/14/18.
+ * Created by RockStar on 4/14/18.
  */
 
 public class SavedSearchAdapter extends RecyclerView.Adapter<SavedSearchAdapter.SavedSearchViewHolder> {

@@ -20,12 +20,270 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <fragment
-                android:id="@+id/fragVehicleDetail"
-                class="com.rock.reliantdispatch.ShipperActivities.VehicleListing.FragmentDetailVehicleItem"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:layout="@layout/fragment_detail_vehicle_item" />
+                style="@style/search_title_style"
+                android:text="Pick / Origin"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="State - City - ZipCode"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Metro Area: Philadelphia-Camden-Wilmington"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Pickup Map"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"
+                        android:layout_marginRight="@dimen/interval_margin"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Weather"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Delivery / Destination"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="State - City - ZipCode"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Metro Area: Philadelphia-Camden-Wilmington"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Delivery Map"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"
+                        android:layout_marginRight="@dimen/interval_margin"
+                        android:layout_marginEnd="@dimen/interval_margin"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/default_btn_style"
+                        android:text="Weather"
+                        android:background="@drawable/btn_background_orange_color"
+                        android:layout_marginTop="@dimen/interval_margin"
+                        android:layout_marginBottom="@dimen/interval_margin"/>
+                </LinearLayout>
+
+                <Button
+                    style="@style/default_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:background="@drawable/btn_background_yellow_color"
+                    android:text="Route Map"
+                    android:textColor="@color/black_text_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Vehicles / Order ID"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextTitleStyle"
+                    android:text="Total: 3 Vehicles"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerVehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Test Pennsylvania"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_id" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="#fd458edad"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Carrier / Payments"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carrier"
+                    android:layout_marginTop="@dimen/interval_margin"/>
+
+
+                <Button
+                    android:id="@+id/btCarrierInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_btn_height"
+                    style="@style/linkButton"
+                    android:textAlignment="gravity"
+                    android:gravity="start|center_vertical"
+                    android:text="VEHA Trucking (RD # 605516) "
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payments: $2,400 / $2,600 COD (Company Check) " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Carrier will Pay Shipper: $200.00 Broker Fee "
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance: 0.0 miles" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Payment Per Mile: $0.00"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/search_title_style"
+                android:text="Ship / Updated"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/interval_margin"
+                android:paddingEnd="@dimen/interval_margin">
+
+                <TextView
+                    style="@style/itemTextTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/interval_margin"
+                    android:text="Ship Ready:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/itemTextContentStyle"
+                    android:text="Updated: 04/05/2018"
+                    android:layout_marginBottom="@dimen/tiny_margin"/>
+                <TextView
+                    style="@style/itemTextContentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 07:23:16 CST"
+                    android:layout_marginBottom="@dimen/interval_margin"/>
+                <Button
+                    android:id="@+id/btViewGatePass"
+                    android:layout_width="match_parent"
+                    style="@style/default_btn_style"
+                    android:background="@drawable/btn_background_black_color"
+                    android:text="VIEW GATE PASS"
+                    android:layout_marginTop="@dimen/interval_margin"
+                    android:layout_marginStart="@dimen/interval_margin"
+                    android:layout_marginEnd="@dimen/interval_margin"
+                    android:layout_marginBottom="@dimen/default_margin"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

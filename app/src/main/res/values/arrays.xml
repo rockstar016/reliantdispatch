@@ -90,13 +90,13 @@
 
 
 	<string-array name="yesno">
-		<item>yes</item>
-		<item>no</item>
+		<item>Yes</item>
+		<item>No</item>
 	</string-array>
 
 
 	<string-array name="state_names">
-		<item>State</item>
+		<item>Choose State</item>
 		<item>Alabama</item>
 		<item>Alaska</item>
 		<item>Arizona</item>

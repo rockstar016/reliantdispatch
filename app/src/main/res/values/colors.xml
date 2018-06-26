@@ -15,7 +15,9 @@
     <!--<color name="result_minor_text">#ffc0c0c0</color> &lt;!&ndash; source language text/label text color. For example, "OCR English" &ndash;&gt;-->
     <color name="result_text">#ffffffff</color> <!-- OCR result text color -->
     <color name="viewfinder_frame">#d6d6d6</color> <!-- viewfinder rectangle -->
-    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_mask">#a0000000</color>
     <color name="check_bk_color">#086c09</color>
     <color name="search_title_bk">#DDDDDD</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

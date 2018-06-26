@@ -1,12 +1,10 @@
 package com.rock.reliantdispatch.DataStoreLayer;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-
 public class DataStoreManager {
-    Context context;
-    static DataStoreManager mInstance;
-    ShipperVehicleListingStoreLayer VehicleListingStoreLayer;
+    private static DataStoreManager mInstance;
+    private ShipperVehicleListingStoreLayer VehicleListingStoreLayer;
+    private VinInfoStoreLayer vinInfoStoreLayer;
+    private LocationDataStoreLayer locationDataStoreLayer;
     public static DataStoreManager getInstance()
     {
         if(mInstance == null)
@@ -16,12 +14,22 @@ public class DataStoreManager {
         return mInstance;
     }
 
-    public DataStoreManager()
+    private DataStoreManager()
     {
+        vinInfoStoreLayer = new VinInfoStoreLayer();
         VehicleListingStoreLayer = new ShipperVehicleListingStoreLayer();
+        locationDataStoreLayer = new LocationDataStoreLayer();
+    }
+
+    public VinInfoStoreLayer getVinInfoStoreLayer() {
+        return vinInfoStoreLayer;
     }
 
     public ShipperVehicleListingStoreLayer getVehicleListingStoreLayer() {
         return VehicleListingStoreLayer;
+    }
+
+    public LocationDataStoreLayer getLocationDataStoreLayer() {
+        return locationDataStoreLayer;
     }
 }

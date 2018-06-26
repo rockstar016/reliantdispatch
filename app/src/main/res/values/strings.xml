@@ -1,19 +1,12 @@
 <resources>
+    <string name="geo_api_key">AIzaSyB88D6ssaakLt8ZOayi1LqaIOjhP52Ccd0</string>
     <string name="app_name">Reliant Dispatch</string>
     <string name="menu_new">New</string>
     <string name="menu_refresh">Refresh</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="payment">Payment</string>
-    <string name="scan_vin_barcode">Scan VIN Barcode</string>
-    <string name="attachments">Attachments</string>
-    <string name="shipper_customer_information">Shipper/Customer Information</string>
-    <string name="add_shipper_customer_information">Add Shipper/Customer Information</string>
-    <string name="add_payment_information">Add Payment Information</string>
     <string name="payment_information">Payment Information</string>
     <string name="delivery_information">Delivery / Destination</string>
     <string name="add_pickup_infomation">Pickup / Origin</string>
     <string name="pickup_information">Pickup Information</string>
-    <string name="inspection">New Inspection</string>
     <string name="off_duty">Off Duty</string>
     <string name="sleeper_nberth">Sleeper\nBerth</string>
     <string name="on_duty">On Duty</string>
@@ -21,8 +14,6 @@
     <string name="turn_on_flashlight">Turn on Flashlight</string>
     <string name="turn_off_flashlight">Turn off Flashlight</string>
     <string name="requried_field"> Required Field </string>
-    <string name="add_other_listing_information">Add other listing Information</string>
-    <string name="scan_vin_letters_amp_numbers"><![CDATA[Scan VIN Letters&Numbers]]></string>
     <string name="terminal">Terminal</string>
     <string name="private_residence">Private Residence</string>
     <string name="address_book">Address Book</string>
@@ -33,11 +24,7 @@
     <string name="address1">Address1</string>
     <string name="address2">Address2</string>
     <string name="dispatch_instructions">Important Dispatch Instructions</string>
-    <string name="next">Continue</string>
-    <string name="go_back">Go Back</string>
     <string name="notification_notAvailable">Notifications are not available for region searches.</string>
-    <string name="post_vehicles">Post Vehicles</string>
-    <string name="find_loads">Find Loads</string>
     <string name="e_bill_of_lading">e-Bill of Lading</string>
     <string name="resources">Resources</string>
     <string name="my_account">My Account</string>
@@ -54,8 +41,6 @@
     <string name="my_listed_truck_space">Listed Truck</string>
     <string name="quick">Create Quick Listing</string>
     <string name="createSavedListing">Create Saved Listing</string>
-    <string name="createListing">Create Listing / Save Listing for Later</string>
-    <string name="directDispatch">Direct Dispatch To a Carrier</string>
     <string name="additional_listing_information">Additional Listing Information</string>
     <string name="login_explain_title">By logging in, I agree to the Reliant Dispatch Terms and Conditions.</string>
     <string name="rememer_explain_title">WARNING: Drive Safely and Obey All Traffic Laws and Regulations. Increasing data shows that distracted driving impairs a driver\'s ability. Please do not use this app while driving as it can lead to serious accident or death.</string>
@@ -69,7 +54,6 @@
     <string name="user_name_asterik">User Name *</string>
     <string name="member_login">Member Login</string>
     <string name="select_region_or_state">Select Region or State</string>
-    <string name="show_bottom_dialog">Show Bottom Dialog</string>
     <string name="export">Export</string>
     <string name="vehicles">Vehicles</string>
     <string name="drafts">Drafts</string>
@@ -77,7 +61,7 @@
     <string name="pickup_amp_delivery_location"><![CDATA[Pickup & Delivery Location]]></string>
     <string name="zip_code">Zip Code</string>
     <string name="city">City</string>
-    <string name="distance_amount_display"><![CDATA[<b>Distance : 0 miles</b> is automatically calculated and is approximate.]]></string>
+    <string name="distance_amount_display"><![CDATA[<b>Distance : %1$d miles</b> is automatically calculated and is approximate.]]></string>
     <string name="vehicles_amp_trailer_type"><![CDATA[Vehicles & Trailer Type]]></string>
     <string name="my_order_id">My Order ID</string>
     <string name="route_map">Route Map</string>
@@ -89,7 +73,6 @@
     <string name="title_activity_edit_quick_address">EditQuickAddressActivity</string>
     <string name="delivery_location">Delivery Location</string>
     <string name="pickup_location">Pickup Location</string>
-    <string name="title_activity_departure_list">DepartureListActivity</string>
     <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
     <string name="title_activity_my_profile">My profile</string>
     <string name="title_activity_my_notification">My Notifications</string>
@@ -109,7 +92,6 @@
     <string name="vehicle_list_kind_archieved">Archieved</string>
     <string name="offers_counter_offers">Offers / Counter Offers</string>
 
-    <string name="vehicle_list_kind_all_index">All (%1$d)</string>
     <string name="vehicle_list_kind_listed_index">Listed (%1$d)</string>
     <string name="vehicle_list_kind_dispatched_index">Dispatched (%1$d)</string>
     <string name="vehicle_list_kind_accepted_index">Accepted (%1$d)</string>
@@ -128,6 +110,16 @@
     <string name="title_activity_order_detail">Detail of Order</string>
     <string name="title_activity_detail_truck_profile">Detail of Truck</string>
     <string name="title_activity_truck_departure_detail">Detail of Departure</string>
+    <string name="close_button">Close</string>
+    <string name="title_activity_inspection">Inspection</string>
+
+    <string name="title_activity_inspection_capture">InspectionCaptureActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_add_damage">AddDamageActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

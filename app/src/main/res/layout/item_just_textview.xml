@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/txtContent"
     android:text="Just Content"
+    android:textColor="@color/black_text_color"
     android:paddingTop="@dimen/default_margin"
     android:paddingBottom="@dimen/default_margin">
 

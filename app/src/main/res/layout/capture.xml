@@ -70,17 +70,17 @@
 
           <Button
               android:id="@+id/btDone"
-              style="@style/blueBorderButtonStyle"
+              style="@style/default_btn_style"
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
+              android:background="@drawable/btn_background_blue_color"
               android:layout_gravity="center"
               android:text="Done" />
 
           <Button
               android:id="@+id/btAgain"
-              style="@style/blueBorderButtonStyle"
+              style="@style/default_btn_style"
+              android:background="@drawable/btn_background_green_color"
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
               android:layout_gravity="center"
               android:text="Try Again" />
       </LinearLayout>

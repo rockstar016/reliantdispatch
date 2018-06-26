@@ -3,17 +3,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <TextView
+        android:id="@+id/txtDistance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:text="@string/distance_amount_display"
-        android:layout_margin="@dimen/interval_margin"/>
-    <Button
-        android:layout_width="match_parent"
-        android:background="@drawable/background_gray_color"
         android:layout_margin="@dimen/interval_margin"
-        android:text="@string/route_map"
+        android:text="@string/distance_amount_display"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btShowMap"
         style="@style/default_btn_style"
-        android:textColor="@color/black_text_color"/>
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/interval_margin"
+        android:layout_marginStart="@dimen/interval_margin"
+        android:background="@drawable/btn_background_yellow_color"
+        android:enabled="true"
+        android:text="@string/route_map"
+        android:textColor="@color/black_text_color" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        style="@style/default_btn_style"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/interval_margin"
+        android:background="@drawable/btn_background_blue_color"
+        android:textColor="@color/button_text_color"
+        android:text="Calculate Distance" />
 </LinearLayout>
